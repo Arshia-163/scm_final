@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Page</title>
+
+  <title>Review </title>
     <link rel="stylesheet" href="review.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
     <style>
@@ -152,13 +153,32 @@
                 <label for="Email">Email:</label>
                 <input type="email" name="email" required>
             </div>
+          main
+	     <div class="rating-review">
+                <label for="recipe-name">sugg:</label>
+                <input type="text" name="recipe-name" required>
+            </div>
+            <div class="rating-review">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" name="recipe-name" required>
+            </div>
+
             
+
             <div class="rating-review">
                 <label for="rating">Your Rating:</label>
                 <input type="number" id="rating" name="rating" min="1" max="5" required>
             </div>
+             <div class="rating-review">
+                <label for="rating">Your suugestion:</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required>
+            </div>
             <div class="rating-review">
                 <label for="review">Your Review:</label>
+                <textarea id="userReview" name="userReview" required></textarea>
+            </div>
+		div class="rating-review">
+                <label for="review">Your Suggetion:</label>
                 <textarea id="userReview" name="userReview" required></textarea>
             </div>
             <input type="hidden" name="_captcha" value="false">
